@@ -29,16 +29,16 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate,UINaviga
         imagepickercontroller.delegate = self
         
         
-        let actionsheet = UIAlertController(title: "pohoto source", message: "choose a photo source", preferredStyle: .actionSheet)
+        let actionsheet = UIAlertController(title: "Photo Source", message: "Choose Photo Source", preferredStyle: .actionSheet)
         
         // camera
-        actionsheet.addAction(UIAlertAction(title: "camera", style: .default, handler: { (action:UIAlertAction) in
+        actionsheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
             imagepickercontroller.sourceType = .camera
             self.present(imagepickercontroller, animated: true, completion: nil)
         }))
         
         // photolibrary
-        actionsheet.addAction(UIAlertAction(title: "photolibrary", style: .default, handler: { (action:UIAlertAction) in
+        actionsheet.addAction(UIAlertAction(title: "PhotoLibrary", style: .default, handler: { (action:UIAlertAction) in
             
             imagepickercontroller.sourceType = .photoLibrary
             
@@ -47,7 +47,7 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate,UINaviga
         
         // cancel
         
-        actionsheet.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
+        actionsheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(actionsheet, animated: true, completion: nil)
         
   
