@@ -12,6 +12,7 @@
 		840FDE2D1EF13B2500C344CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840FDE2B1EF13B2500C344CD /* Main.storyboard */; };
 		840FDE2F1EF13B2500C344CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840FDE2E1EF13B2500C344CD /* Assets.xcassets */; };
 		840FDE321EF13B2500C344CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840FDE301EF13B2500C344CD /* LaunchScreen.storyboard */; };
+		840FDE3A1EF13BDB00C344CD /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 840FDE391EF13BDB00C344CD /* lion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		840FDE2E1EF13B2500C344CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840FDE311EF13B2500C344CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840FDE331EF13B2500C344CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840FDE391EF13BDB00C344CD /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				840FDE291EF13B2500C344CD /* ViewController.swift */,
 				840FDE2B1EF13B2500C344CD /* Main.storyboard */,
 				840FDE2E1EF13B2500C344CD /* Assets.xcassets */,
+				840FDE391EF13BDB00C344CD /* lion.jpg */,
 				840FDE301EF13B2500C344CD /* LaunchScreen.storyboard */,
 				840FDE331EF13B2500C344CD /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840FDE321EF13B2500C344CD /* LaunchScreen.storyboard in Resources */,
+				840FDE3A1EF13BDB00C344CD /* lion.jpg in Resources */,
 				840FDE2F1EF13B2500C344CD /* Assets.xcassets in Resources */,
 				840FDE2D1EF13B2500C344CD /* Main.storyboard in Resources */,
 			);

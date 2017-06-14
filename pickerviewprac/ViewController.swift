@@ -1,25 +1,78 @@
-//
-//  ViewController.swift
-//  pickerviewprac
-//
-//  Created by Admin on 14/06/17.
-//  Copyright © 2017 Admin. All rights reserved.
-//
+
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var photoImageView: UIImageView!
+    
+    
+    
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        dismiss(animated: true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+   
+    
+   
+    
+    
+    
+    @IBAction func selectimagefromlibrary(_ sender: UITapGestureRecognizer)
+    {
+        let imagepickercontroller = UIImagePickerController()
+        
+        imagepickercontroller.delegate = self
+        
+        
+        let actionsheet = UIAlertController(title: "pohoto source", message: "choose a photo source", preferredStyle: .actionSheet)
+        
+        // camera
+        actionsheet.addAction(UIAlertAction(title: "camera", style: .default, handler: { (action:UIAlertAction) in
+            imagepickercontroller.sourceType = .camera
+            self.present(imagepickercontroller, animated: true, completion: nil)
+        }))
+        
+        // photolibrary
+        actionsheet.addAction(UIAlertAction(title: "photolibrary", style: .default, handler: { (action:UIAlertAction) in
+            
+            imagepickercontroller.sourceType = .photoLibrary
+            
+            self.present(imagepickercontroller, animated: true, completion: nil)
+        }))
+        
+        // cancel
+        
+        actionsheet.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
+        self.present(actionsheet, animated: true, completion: nil)
+        
+  
     }
+   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+        
+    {
+        let selecttedphoto = info[UIImagePickerControllerOriginalImage ] as! UIImage
+        
+        photoImageView.image = selecttedphoto
+        
+        dismiss(animated: true, completion: nil)
+    }
+        
+        
+       
+        
+    
+    
+    
+    
+    
+    
+    
 
-
+    
 }
 
